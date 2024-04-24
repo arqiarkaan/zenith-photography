@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <title>Zenith Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="max-w-[1920px] mx-auto relative overflow-x-hidden bg-[#ebe9e1]">
+    <!-- Navbar Menu -->
+    <div
+      class="bg-black left-0 top-0 bottom-0 right-0 fixed gap-y-5 text-[#373737] flex-col justify-center items-center text-[60px] font-extrabold navbar transition-all scale-100 z-50 flex close-nav max-md:text-3xl"
+    >
+      <i
+        class="fa-solid fa-xmark text-3xl absolute right-10 top-10 hover:text-white cursor-pointer transition-all open-btn"
+      ></i>
+      <a
+        href="../index.html"
+        class="hover:text-white cursor-pointer transition-all"
+        >Home</a
+      >
+      <a
+        href="about.html"
+        class="hover:text-white cursor-pointer transition-all"
+        >About</a
+      >
+      <a
+        href="service.html"
+        class="hover:text-white cursor-pointer transition-all"
+        >Services</a
+      >
+      <a
+        href="projects.html
+"
+        class="hover:text-white cursor-pointer transition-all"
+        >Projects</a
+      >
+      <a href="hire.html" class="hover:text-white cursor-pointer transition-all"
+        >Hire Us</a
+      >
+    </div>
+    <!-- Navbar Menu -->
+    <!-- Scroll to Top -->
+    <button
+      id="scrollToTop"
+      class="fixed bottom-10 right-10 rounded-full bg-white w-10 h-10 z-50 border"
+    >
+      <i class="fa-solid fa-arrow-up-long"></i>
+    </button>
+    <!-- Scroll to Top -->
+    <!-- Navbar -->
+    <div class="absolute w-full flex justify-between p-5 z-20 max-sm:p-5">
+      <span class="text-3xl font-bold"
+        >Zenith<span class="text-rose-500">.</span></span
+      >
+
+      <div
+        class="relative flex flex-col items-center justify-center gap-y-[6px] group hover:cursor-pointer h-10 open-btn"
+      >
+        <div
+          class="before:transition-all after:transition-all relative w-[24px] h-[2px] bg-black before:absolute before:w-[10px] before:h-[2px] before:bg-black before:-top-2 before:right-0 after:absolute after:w-[10px] after:h-[2px] after:bg-black after:-bottom-2 group-hover:before:-top-[10px] group-hover:after:-bottom-[10px]"
+        ></div>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Project -->
+    <div class="relative max-sm:p-0">
+      <div class="pt-40 pb-10 px-10 max-sm:px-5">
+        <h1 class="text-5xl font-bold mb-3 max-sm:text-3xl">
+          Projects
+        </h1>
+        <span class="text-gray-400 max-sm:text-sm"
+          >From Vision to Work of Art: Collaborations with Extraordinary Clients that Bring Results.
+        </span>
+      </div>
+    </div>
+    <div class="flex flex-col gap-5">
+      <div
+        class="flex gap-5 text-xl font-semibold filter-buttons justify-center flex-wrap max-md:px-5"
+      >
+        <div
+          data-filter="all"
+          class="cursor-pointer hover:underline hover:text-blue-500 transition-all"
+        >
+          All
+        </div>
+        <div
+          data-filter="product"
+          class="cursor-pointer hover:underline hover:text-blue-500 transition-all"
+        >
+          Product
+        </div>
+        <div
+          data-filter="content"
+          class="cursor-pointer hover:underline hover:text-blue-500 transition-all"
+        >
+          Content
+        </div>
+        <div
+          data-filter="documentation"
+          class="cursor-pointer hover:underline hover:text-blue-500 transition-all"
+        >
+          Documentation
+        </div>
+        <div
+          data-filter="corporate"
+          class="cursor-pointer hover:underline hover:text-blue-500 transition-all"
+        >
+          Corporate
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-3 gap-4 px-10 max-md:flex max-md:flex-col max-md:gap-5"
+      >
+        <div
+          class="max-h-[250px] relative cursor-pointer all filter-item overflow-hidden hidden-down-top"
+        >
+          <div
+            class="absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-full group"
+          >
+            <div
+              class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-40 transition-all"
+            ></div>
+            <span
+              class="text-lg font-semibold text-white z-10 group-hover:opacity-100 opacity-0 transition-all"
+              >Jasa Fotografi Street - Jalan Pantura</span
+            >
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="../img/porto-2.jpg"
+              alt="unsplash"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-[250px] relative cursor-pointer all product filter-item overflow-hidden hidden-down-top"
+        >
+          <div
+            class="absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-full group"
+          >
+            <div
+              class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-40 transition-all"
+            ></div>
+            <span
+              class="text-lg font-semibold text-white z-10 group-hover:opacity-100 opacity-0 transition-all"
+              >Jasa Fotografi Tempat Makan - Buritto Man
+            </span>
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="../img/projects/project-1.jpg"
+              alt="unsplash"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-[250px] relative cursor-pointer all content filter-item overflow-hidden hidden-down-top"
+        >
+          <div
+            class="absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-full group"
+          >
+            <div
+              class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-40 transition-all"
+            ></div>
+            <span
+              class="text-lg font-semibold text-white z-10 group-hover:opacity-100 opacity-0 transition-all max-w-[80%] text-center"
+              >Jasa Fotografi Tempat Penginapan - Hotel Fa Inn
+            </span>
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="../img/projects/project-2.jpg"
+              alt="unsplash"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-[250px] relative cursor-pointer all product documentation filter-item overflow-hidden hidden-down-top"
+        >
+          <div
+            class="absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-full group"
+          >
+            <div
+              class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-40 transition-all"
+            ></div>
+            <span
+              class="text-lg font-semibold text-white z-10 group-hover:opacity-100 opacity-0 transition-all max-w-[80%] text-center"
+              >Jasa Fotografi Makanan - Doyan Makan
+            </span>
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="../img/projects/project-4.jpg"
+              alt="unsplash"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-[250px] relative cursor-pointer all product documentation filter-item overflow-hidden hidden-down-top"
+        >
+          <div
+            class="absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-full group"
+          >
+            <div
+              class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-40 transition-all"
+            ></div>
+            <span
+              class="text-lg font-semibold text-white z-10 group-hover:opacity-100 opacity-0 transition-all max-w-[80%] text-center"
+              >Jasa Fotografi Makanan - Waroeng Mie
+            </span>
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="../img/projects/project-3.jpg"
+              alt="unsplash"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-[250px] relative cursor-pointer all product documentation filter-item overflow-hidden hidden-down-top"
+        >
+          <div
+            class="absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-full group"
+          >
+            <div
+              class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-40 transition-all"
+            ></div>
+            <span
+              class="text-lg font-semibold text-white z-10 group-hover:opacity-100 opacity-0 transition-all max-w-[80%] text-center"
+              >Jasa Fotografi Makanan - Better Batter
+            </span>
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="../img/projects/project-5.jpg"
+              alt="unsplash"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-[250px] relative cursor-pointer all corporate filter-item overflow-hidden hidden-down-top"
+        >
+          <div
+            class="absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-full group"
+          >
+            <div
+              class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-40 transition-all"
+            ></div>
+            <span
+              class="text-lg font-semibold text-white z-10 group-hover:opacity-100 opacity-0 transition-all max-w-[80%] text-center"
+              >Jasa Fotografi Profile - PT Lions Air
+            </span>
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="../img/projects/project-6.jpg"
+              alt="unsplash"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-[250px] relative cursor-pointer all content product filter-item overflow-hidden hidden-down-top"
+        >
+          <div
+            class="absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-full group"
+          >
+            <div
+              class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-40 transition-all"
+            ></div>
+            <span
+              class="text-lg font-semibold text-white z-10 group-hover:opacity-100 opacity-0 transition-all max-w-[80%] text-center"
+              >Jasa Fotografi Hotel - Hotel Dalima
+            </span>
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="../img/projects/project-7.jpg"
+              alt="unsplash"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-[250px] relative cursor-pointer all content documentation corporate filter-item overflow-hidden hidden-down-top"
+        >
+          <div
+            class="absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-full group"
+          >
+            <div
+              class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-40 transition-all"
+            ></div>
+            <span
+              class="text-lg font-semibold text-white z-10 group-hover:opacity-100 opacity-0 transition-all max-w-[80%] text-center"
+              >Jasa Fotografi Dokumentasi - Konser Band Rock N Roll
+            </span>
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="../img/projects/project-8.jpg"
+              alt="unsplash"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project -->
+
+    <!-- Footer -->
+    <div class="p-10 bg-blue-400 text-white max-sm:p-5 mt-10">
+      <div class="flex flex-col gap-y-5">
+        <div class="grid grid-cols-2 max-md:!flex max-md:flex-col gap-5">
+          <div class="flex flex-col gap-y-1">
+            <h3 class="text-4xl max-sm:text-lg">Let's Collaborate!</h3>
+            <span class="text-6xl font-bold relative">Reach Us</span>
+          </div>
+          <div class="flex gap-3 justify-end max-md:flex-col gap-y-5">
+            <div class="flex flex-col gap-y-3 max-w-[250px] w-full">
+              <h4 class="font-semibold mb-2">Contact</h4>
+              <a href="mailto:lemillionscribe@gmail.com" target="_blank"
+                >zenith@gmail.com</a
+              >
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send/?phone=628170715505&text&type=phone_number&app_absent=0"
+                >+628170715505</a
+              >
+            </div>
+            <div class="flex flex-col gap-y-3 max-w-[250px] w-full">
+              <h4 class="font-semibold">Pages</h4>
+              <a href="about.html"><span>About</span></a>
+              <a href="service.html"><span>Services</span></a>
+              <a href="projects.html"><span>Projects</span></a>
+              <a href="hire.html"><span>Hire Us</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 max-md:!flex max-md:flex-col gap-5">
+          <span
+            >&copy; 2024 Zenith Commercial Photography. All rights reserved.
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <script src="../index.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins";
+}
+
+@keyframes spining {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-animate {
+  animation: spining 4s linear infinite;
+}
+
+.hidden-top-down {
+  transform: translateY(-50px);
+  filter: blur(10);
+  opacity: 0;
+  transition: all 1s ease !important;
+}
+.hidden-down-top {
+  transform: translateY(50px);
+  filter: blur(10);
+  opacity: 0;
+  transition: all 1s ease !important;
+}
+
+.hidden-right-left {
+  transform: translateX(-50px);
+  filter: blur(10);
+  opacity: 0;
+  transition: all 1s ease !important;
+}
+.hidden-left-right {
+  transform: translateX(50px);
+  filter: blur(10);
+  opacity: 0;
+  transition: all 1s ease !important;
+}
+
+.show-in {
+  transform: translateY(0);
+  filter: none;
+  opacity: 1;
+}
+
+.close-nav {
+  display: none !important;
+}
+
+.close-modal {
+  transform: translateY(-200%) !important;
+  opacity: 0;
+}
+
+.close-success-modal {
+  display: none;
+}
