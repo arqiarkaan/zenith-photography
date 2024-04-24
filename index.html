@@ -23,6 +23,7 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -99,10 +100,8 @@
         class="flex flex-col pt-36 text-center justify-center items-center gap-y-4 hidden-top-down h-full text-white"
       >
         <h1
-          class="text-[80px] font-bold max-w-[1240px] leading-[1] max-sm:text-2xl mb-5 max-md:mb-2"
-        >
-          Unveiling beauty photo through our lens.
-        </h1>
+          class="text-[80px] font-bold max-w-[1240px] leading-[1] max-sm:text-2xl mb-5 max-md:mb-2" id="teks"
+        ></h1>
         <p class="text-xl max-w-[850px] max-sm:text-base" id="element">
           We are a team of professionals dedicated to capturing your story
           through our creative lens. Let's create unforgettable memories
@@ -636,6 +635,7 @@
       </div>
     </div>
     <!-- Clients -->
+    
     <!-- Choose Us -->
     <div
       class="px-10 py-20 my-28 w-full min-h-[700px] bg-[#393eda] relative overflow-hidden text-white -z-20 max-sm:p-5"
@@ -966,6 +966,14 @@
     <script src="index.js" defer></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      var typed = new Typed("#teks", {
+        strings: ["Unveiling beauty photo through our lens."],
+        typeSpeed: 60,
+        startDelay: 800,
+        showCursor: false,
+      });
     </script>
   </body>
 </html>

@@ -23,6 +23,7 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../styles.css" />
   </head>
@@ -59,6 +60,7 @@
         >Hire Us</a
       >
     </div>
+
     <!-- Navbar Menu -->
     <!-- Scroll to Top -->
     <button
@@ -85,7 +87,6 @@
     <!-- Navbar -->
 
     <!-- Our Services -->
-
     <div class="relative max-sm:p-0">
       <div class="pt-40 pb-10 px-10 max-sm:px-5">
         <h1 class="text-5xl font-bold mb-3">Services</h1>
@@ -102,12 +103,15 @@
           <div class="flex flex-col gap-3">
             <h2 class="text-3xl font-bold">
               Product
-              <span class="text-black underline bg-white px-2"
-                >Photography</span
-              >
+              <span
+                class="text-black underline bg-white px-2"
+                id="photo"
+              ></span>
             </h2>
             <p>
-              Make Your Products Shine Online! Get professional product photography to boost sales on your website, social media, and e-commerce platforms. Fast and Affordable.
+              Make Your Products Shine Online! Get professional product
+              photography to boost sales on your website, social media, and
+              e-commerce platforms. Fast and Affordable.
             </p>
           </div>
           <div class="flex flex-col gap-3 font-semibold">
@@ -131,7 +135,7 @@
             >
           </div>
           <a
-            href="wa.me/+625214"
+            href="https://api.whatsapp.com/send/?phone=628170715505&text&type=phone_number&app_absent=0"
             class="py-3 px-7 border-[3px] border-white bg-white text-black hover:scale-110 hover:bg-black hover:text-white hover:border-black !transition-all cursor-pointer w-fit flex gap-x-1 items-center hidden-down-top"
           >
             Get In Touch <i class="fas fa-angle-double-right"></i>
@@ -141,7 +145,7 @@
           <img
             src="../img/service-2.jpg"
             alt="unsplash"
-            class="w-full max-h-[600px] object-cover object-top"
+            class="w-full max-h-[600px] object-cover object-top rounded-xl shadow-2xl"
           />
         </div>
       </div>
@@ -155,12 +159,17 @@
           <div class="flex flex-col gap-3">
             <h2 class="text-3xl font-bold">
               Corporate
-              <span class="text-black underline bg-white px-2"
-                >Photography</span
-              >
+              <span
+                class="text-black underline bg-white px-2"
+                id="photo1"
+              ></span>
             </h2>
             <p>
-              Stand Out with a Stunning Company Profile! Ensure your company profile looks professional and captivating for magazines, websites, press releases, and more. Zenit's company profile photography services capture every important moment of your business.
+              Stand Out with a Stunning Company Profile! Ensure your company
+              profile looks professional and captivating for magazines,
+              websites, press releases, and more. Zenit's company profile
+              photography services capture every important moment of your
+              business.
             </p>
           </div>
           <div class="flex flex-col gap-3 font-semibold">
@@ -184,7 +193,7 @@
             >
           </div>
           <a
-            href="wa.me/+625214"
+            href="https://api.whatsapp.com/send/?phone=628170715505&text&type=phone_number&app_absent=0"
             class="py-3 px-7 border-[3px] border-white bg-white text-black hover:scale-110 hover:bg-black hover:text-white hover:border-black !transition-all cursor-pointer w-fit flex gap-x-1 items-center hidden-down-top"
           >
             Get In Touch <i class="fas fa-angle-double-right"></i>
@@ -194,7 +203,7 @@
           <img
             src="../img/service-1.png"
             alt="unsplash"
-            class="w-full max-h-[600px] object-cover object-top"
+            class="w-full max-h-[600px] object-cover object-top rounded-xl shadow-2xl"
           />
         </div>
       </div>
@@ -208,15 +217,19 @@
           <div class="flex flex-col gap-3">
             <h2 class="text-3xl font-bold">
               Documentation
-              <span class="text-black underline bg-white px-2"
-                >Photography</span
-              >
+              <span
+                class="text-black underline bg-white px-2"
+                id="photo2"
+              ></span>
             </h2>
             <p>
-              Showcase Professionalism and Beauty! Architecture, hotel interior design, decoration, real estate, and other fields require stunning visuals. Get professional photos from Zenith to enhance your brand appeal.
+              Showcase Professionalism and Beauty! Architecture, hotel interior
+              design, decoration, real estate, and other fields require stunning
+              visuals. Get professional photos from Zenith to enhance your brand
+              appeal.
             </p>
             <a
-              href="wa.me/+625214"
+              href="https://api.whatsapp.com/send/?phone=628170715505&text&type=phone_number&app_absent=0"
               class="py-3 px-7 border-[3px] border-white bg-white text-black hover:scale-110 hover:bg-black hover:text-white hover:border-black !transition-all cursor-pointer w-fit flex gap-x-1 items-center hidden-down-top"
             >
               Get In Touch <i class="fas fa-angle-double-right"></i>
@@ -227,7 +240,7 @@
           <img
             src="../img/service-3.jpg"
             alt="unsplash"
-            class="w-full max-h-[600px] object-cover object-top"
+            class="w-full max-h-[600px] object-cover object-top rounded-xl shadow-2xl"
           />
         </div>
       </div>
@@ -239,29 +252,34 @@
         <div class="flex flex-col gap-6 w-full hidden-right-left order-last">
           <div class="flex flex-col gap-3">
             <h2 class="text-3xl font-bold">
-              Architecture
-              <span class="text-black underline bg-white px-2"
-                >Photography</span
-              >
+              Content
+              <span
+                class="text-black underline bg-white px-2"
+                id="photo3"
+              ></span>
             </h2>
-            <p>Perfect Visuals for Your Best Moments! Tell your most compelling stories through stunning visuals. Zenit's experts can help you create impactful photos and videos.</p>
+            <p>
+              Perfect Visuals for Your Best Moments! Tell your most compelling
+              stories through stunning visuals. Zenit's experts can help you
+              create impactful photos and videos.
+            </p>
           </div>
           <div class="flex flex-col gap-3 font-semibold">
             <span
-              >Architecture
+              >Fashion
               <span class="text-black underline bg-white px-2"
                 >Photography</span
               ></span
             >
             <span
-              >Interior
+              >Wedding
               <span class="text-black underline bg-white px-2"
                 >Photography</span
               ></span
             >
           </div>
           <a
-            href="wa.me/+625214"
+            href="https://api.whatsapp.com/send/?phone=628170715505&text&type=phone_number&app_absent=0"
             class="py-3 px-7 border-[3px] border-white bg-white text-black hover:scale-110 hover:bg-black hover:text-white hover:border-black !transition-all cursor-pointer w-fit flex gap-x-1 items-center hidden-down-top"
           >
             Get In Touch <i class="fas fa-angle-double-right"></i>
@@ -271,7 +289,7 @@
           <img
             src="../img/service-4.jpg"
             alt="unsplash"
-            class="w-full max-h-[600px] object-cover object-top"
+            class="w-full max-h-[600px] object-cover object-top rounded-xl shadow-2xl"
           />
         </div>
       </div>
@@ -319,5 +337,33 @@
     <!-- Footer -->
 
     <script src="../index.js" defer></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#photo", {
+        strings: ["Photography."],
+        typeSpeed: 100,
+        showCursor: false,
+      });
+
+      var typed2 = new Typed("#photo1", {
+        strings: ["Photography."],
+        typeSpeed: 100,
+        showCursor: false,
+
+      });
+
+      var typed3 = new Typed("#photo2", {
+        strings: ["Photography."],
+        typeSpeed: 100,
+        showCursor: false,
+      });
+
+      var typed4 = new Typed("#photo3", {
+        strings: ["Photography."],
+        typeSpeed: 100,
+        showCursor: false,
+      });
+    </script>
   </body>
 </html>
