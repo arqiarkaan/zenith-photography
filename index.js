@@ -65,6 +65,7 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 800);
     return false;
   });
+  // Scroll on Top
 
   // Animate On Scroll Screen
   const observer = new IntersectionObserver((entries) => {
