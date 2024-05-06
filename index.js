@@ -12,28 +12,56 @@ $(document).ready(function () {
 
   $(".close-modal-btn").click(function () {
     var name = $("#nameInput").val();
+    var email = $("#emailInput").val();
     var message = $("#messageTextarea").val();
-
+  
     if (name === "") {
       return false;
     }
 
     if (message === "") {
+      return false;
+    }
+
+    if (email == "") {
       return false;
     }
 
     $(".modal").toggleClass("close-modal");
   });
 
+  function isValidEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
   $(".btn-send").click(function () {
     var name = $("#nameInput").val();
+    var email = $("#emailInput").val();
     var message = $("#messageTextarea").val();
 
+    if (email === "") {
+      alert("Email cannot be empty.");
+      return false;
+    }
+
+    if (!isValidEmail(email)) {
+      alert("Please enter a valid email address, e.g. __@__.__");
+      return false;
+    }
+
     if (name === "") {
+      alert("Name cannot be empty.");
+      return false;
+    }
+
+    if (/\d/.test(name)) {
+      alert("Name cannot contain numbers.");
       return false;
     }
 
     if (message === "") {
+      alert("Message cannot be empty.");
       return false;
     }
 
@@ -43,7 +71,7 @@ $(document).ready(function () {
       $(".modal-success").toggleClass("close-success-modal");
     }, 1000);
   });
-  // Modal
+
 
   // Dropdown FAQ
   $(".dropdown-faq").click(function () {
