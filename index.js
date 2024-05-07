@@ -71,6 +71,7 @@ $(document).ready(function () {
       $(".modal-success").toggleClass("close-success-modal");
     }, 1000);
   });
+  // Modal
 
 
   // Dropdown FAQ

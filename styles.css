@@ -5,19 +5,6 @@ body {
   font-family: "Poppins";
 }
 
-@keyframes spining {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.spin-animate {
-  animation: spining 4s linear infinite;
-}
-
 .hidden-top-down {
   transform: translateY(-50px);
   filter: blur(10);
