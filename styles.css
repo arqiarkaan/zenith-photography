@@ -5,6 +5,7 @@ body {
   font-family: "Poppins";
 }
 
+/* AOS form people github */
 .hidden-top-down {
   transform: translateY(-50px);
   filter: blur(10);
@@ -36,6 +37,7 @@ body {
   filter: none;
   opacity: 1;
 }
+/* AOS form people github */
 
 .close-nav {
   display: none !important;

@@ -96,7 +96,7 @@ $(document).ready(function () {
   });
   // Scroll on Top
 
-  // Animate On Scroll Screen
+  // Animate On Scroll Screen From People Github 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
